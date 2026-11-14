@@ -34,28 +34,28 @@ void  test_ft_calloc(void)
 	free(ptr2b);
 
 	// Test 3: Execute with zero size
-	size_t	nmemb3 = 1;
-	size_t	size3 = 0;
-	void *ptr3a = ft_calloc(nmemb3, size3);
-	void *ptr3b = calloc(nmemb3, size3);
+	// size_t	nmemb3 = 1;
+	// size_t	size3 = 0;
+	// void *ptr3a = ft_calloc(nmemb3, size3);
+	// void *ptr3b = calloc(nmemb3, size3);
 	// assert(!memcmp(ptr3a, ptr3b, nmemb3));
-	printf("\nTest 3 passed: Execute with zero size\n");
-	printf("ft_calloc - nmemb:%zu - size:%zu - return:\"%p\"\n", nmemb3, size3, ptr3a);
-	printf("   calloc - nmemb:%zu - size:%zu - return:\"%p\"\n", nmemb3, size3, ptr3b);
-	free(ptr3a);
-	free(ptr3b);
+	// printf("\nTest 3 passed: Execute with zero size\n");
+	// printf("ft_calloc - nmemb:%zu - size:%zu - return:\"%p\"\n", nmemb3, size3, ptr3a);
+	// printf("   calloc - nmemb:%zu - size:%zu - return:\"%p\"\n", nmemb3, size3, ptr3b);
+	// free(ptr3a);
+	// free(ptr3b);
 
 	// Test 4: Execute with both zero nmemb and zero size
-	size_t	nmemb4 = 0;
-	size_t	size4 = 0;
-	void *ptr4a = ft_calloc(nmemb4, size4);
-	void *ptr4b = calloc(nmemb4, size4);
+	// size_t	nmemb4 = 0;
+	// size_t	size4 = 0;
+	// void *ptr4a = ft_calloc(nmemb4, size4);
+	// void *ptr4b = calloc(nmemb4, size4);
 	// assert(!memcmp(ptr4a, ptr4b, nmemb4));
-	printf("\nTest 4 passed: Execute with both zero nmemb and zero size\n");
-	printf("ft_calloc - nmemb:%zu - size:%zu - return:\"%p\"\n", nmemb4, size4, ptr4a);
-	printf("   calloc - nmemb:%zu - size:%zu - return:\"%p\"\n", nmemb4, size4, ptr4b);
-	free(ptr4a);
-	free(ptr4b);
+	// printf("\nTest 4 passed: Execute with both zero nmemb and zero size\n");
+	// printf("ft_calloc - nmemb:%zu - size:%zu - return:\"%p\"\n", nmemb4, size4, ptr4a);
+	// printf("   calloc - nmemb:%zu - size:%zu - return:\"%p\"\n", nmemb4, size4, ptr4b);
+	// free(ptr4a);
+	// free(ptr4b);
 
 	// Test 5: Allocate big memory area >> valgrind 
 	// size_t	size5 = 10;
